@@ -52,7 +52,6 @@ header {
   margin: 0px auto;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  border: 1px solid black;
 }
 header .banner_left {
   display: flex;
@@ -92,7 +91,6 @@ header .banner_right img {
 
 /* My mission section */
 .mission {
-  border: 1px solid black;
   width: var(--laptop-width);
   margin: 80px auto;
 }
@@ -107,7 +105,6 @@ header .banner_right img {
   grid-gap: 24px;
 }
 .mission .goals .goal {
-  border: 1px solid black;
   padding: 28px;
   border-radius: 26px;
   background: rgba(79, 157, 166, 0.1);
@@ -144,7 +141,6 @@ header .banner_right img {
   background-position-y: 50px;
 }
 .develop_container {
-  border: 1px solid black;
   width: var(--laptop-width);
   margin: 0px auto;
   display: grid;
@@ -174,7 +170,6 @@ header .banner_right img {
 .global {
   width: var(--laptop-width);
   margin: 80px auto;
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 10px;
