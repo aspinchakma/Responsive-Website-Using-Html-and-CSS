@@ -14,6 +14,7 @@
   --highlight-color: #ffad5a;
   --mobile-width: 95%;
   --mobile-font-size: 8px;
+  --para-color: rgb(66, 66, 66);
 }
 html {
   font-size: var(--laptop-font-size);
@@ -41,7 +42,9 @@ body {
   background-color: transparent;
   color: rgb(255, 89, 89);
 }
-
+body span {
+  color: var(--highlight-color);
+}
 /* header section for banner */
 header {
   width: var(--laptop-width);
@@ -61,8 +64,9 @@ header .banner_left h1 {
   line-height: 70px;
   letter-spacing: 0px;
 }
-header .banner_left h1 span {
-  color: var(--highlight-color);
+header .banner_left h1 {
+  border-left: 4px solid #ffad5a;
+  padding-left: 13px;
 }
 header .banner_left .banner_details {
   font-weight: 400;
@@ -70,21 +74,65 @@ header .banner_left .banner_details {
   letter-spacing: 0px;
   font-size: 1.5rem;
   margin: 15px 0 22px;
+  color: var(--para-color);
 }
 header .scrol_down {
   font-size: 1.5rem;
   margin-top: 15px;
+  color: var(--para-color);
 }
 header .banner_right {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
 }
 header .banner_right img {
   width: 95%;
-  border: 1px solid black;
 }
 
+/* My mission section */
+.mission {
+  border: 1px solid black;
+  width: var(--laptop-width);
+  margin: 70px auto;
+}
+.mission > h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 38px;
+}
+.mission .goals {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+.mission .goals .goal {
+  border: 1px solid black;
+  padding: 28px;
+  border-radius: 26px;
+  background: rgba(79, 157, 166, 0.1);
+}
+.mission .goals div:nth-child(2) {
+  background: rgba(255, 89, 89, 0.1);
+}
+.mission .goals div:last-child {
+  background: rgb(255, 244, 214);
+}
+.mission .goal img {
+  width: 50%;
+}
+.mission .goal h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+.mission .goal p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgb(66, 66, 66);
+}
 /* Responsive for mobile device */
 @media screen and (max-width: 550px) {
   html {
@@ -98,5 +146,16 @@ header .banner_right img {
   }
   header .banner_right {
     margin-top: 20px;
+  }
+
+  /* My Mission Section */
+  .mission {
+    width: var(--mobile-width);
+  }
+  .mission .goals {
+    grid-template-columns: 1fr;
+  }
+  .mission .goals .goal img {
+    width: 30%;
   }
 }
