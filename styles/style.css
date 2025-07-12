@@ -1,5 +1,6 @@
 /* Google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 * {
   margin: 0px;
@@ -228,7 +229,30 @@ header .banner_right img {
 .corona_container img {
   width: 50%;
 }
+.corona_apps_container p {
+  font-size: 1.5rem;
+  margin: 13px 0 18px;
+  color: var(--para-color);
+}
 
+/* footer Section */
+footer {
+  text-align: center;
+  padding: 46px 0;
+  background-color: rgb(11, 13, 23);
+}
+footer h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+footer p {
+  font-size: 1.3rem;
+  color: rgb(217, 219, 225);
+}
 /* Responsive for mobile device */
 @media screen and (max-width: 550px) {
   html {
@@ -309,5 +333,16 @@ header .banner_right img {
   .corona_container {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .corona_apps_container .corona_right h2 {
+    text-align: center;
+  }
+  .corona_apps_container .corona_right {
+    text-align: center;
+  }
+
+  /* footer section */
+  footer {
+    margin-top: 50px;
   }
 }
